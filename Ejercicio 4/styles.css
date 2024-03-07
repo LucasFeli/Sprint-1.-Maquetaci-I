@@ -1,0 +1,182 @@
+* {
+  margin: 15px;
+  padding: 0.9px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+.container {
+  max-width: 1200px;
+  height: 500px;
+  background-color: #61d849;
+}
+
+/* Primera caja */
+.header {
+  background-color: Black;
+  height: 150px;
+}
+
+.navbar {
+  background-color: #2d4059;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  background: #fa556b;
+  width: 100px;
+  height: 20px;
+  flex: 1;
+}
+
+.item:nth-child(2) {
+  flex: 5;
+}
+
+.section {
+  background-color: #f07b3f;
+  height: 50px;
+}
+
+.content {
+  background-color: #fad934;
+  height: 17px;
+}
+
+/* Segunda caja */
+
+.block-2 {
+  background-color: Black;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*bloques interiores */
+
+/*Segundo bloque*/
+.article {
+  background: #f04f54;
+  width: 200px;
+  height: 196px;
+  flex: 1;
+}
+
+.lines {
+  background-color: #f7ec8b;
+  height: 23px;
+}
+
+/*Primera caja */
+.article:first-child {
+  background: #553f66;
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+/*Hijos de la primera caja*/
+
+.pointers {
+  background-color: #3a699e;
+  width: calc(45% - 70px);
+  height: 16px;
+  
+}
+
+.pointers:nth-child(6) {
+  background-color: #6fadf2;
+  width: calc(100% - 70px);
+  
+}
+
+.marina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+}
+
+/* Tercera caja */
+.footer {
+  background-color: Black;
+  height: 50px;
+}
+
+.yellow {
+  background-color: #faba0a;
+  height: 17px;
+}
+
+/* For tablets: */
+@media only screen and  (max-width: 768px) {
+
+  .container {
+    background-color: #3a699e;
+    height: 655px;
+  }
+
+  .article {
+    width: 490px;
+    height: 399px;
+    flex: 2;
+    margin-top: 0px;
+    margin-bottom: 23px;
+  }
+
+  .article:first-child {
+    flex: 3.5;
+    margin-top: 20px;
+  }
+
+  .block-2 {
+    background-color: #fad934;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .lines {
+    margin-top: 16px;
+    height: 18px;
+    margin: 10px;
+  }
+
+  .pointers {
+    width: 40%;
+  }
+}
+/* For mobiles devices */
+@media only screen and (max-width: 600px) {
+
+  .container {
+    background-color: #e48125;
+  }
+  .item:nth-child(2) {
+    flex: 1;
+  }
+
+  .article {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lines {
+    margin-top: 19px;
+    width: 150px
+  }
+}
